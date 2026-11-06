@@ -74,6 +74,83 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #d9e1e5;
+}
+
+.participants-section h5 {
+  margin-bottom: 7px;
+  color: #245b54;
+  font-size: 0.9rem;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  color: #4a5759;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 34px;
+  padding: 3px 0;
+}
+
+.participant-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant-button {
+  display: inline-grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #8a4c4c;
+}
+
+.remove-participant-button:hover:not(:disabled) {
+  border-color: #e5c4c4;
+  background: #fff1f1;
+  color: #a52e2e;
+}
+
+.remove-participant-button:focus-visible {
+  outline: 2px solid #398477;
+  outline-offset: 2px;
+}
+
+.remove-participant-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.remove-participant-button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.participants-empty {
+  color: #707b7d;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
